@@ -1,3 +1,55 @@
+:root{
+    background-color: #e2e8f0;
+}
 .container{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.articals{
+    display: grid;
+    grid-template-rows : 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.sidebar{
+    display: grid;
+    grid-column: 1/2;
+    background-color: aqua;
+}
+header{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    display: grid;
+    grid-column: 1/2;
+    background-color: aqua;
+    
+}
+.trending{
+    display: grid;
+    grid-column: 3/4;
+}
+.topme{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+nav{    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.quote{
+    display: grid;
+    grid-column: 1/2;
+}
+label{
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
