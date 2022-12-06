@@ -1,55 +1,115 @@
+*{
+    margin: 0;
+    
+}
 :root{
     background-color: #e2e8f0;
+    font-family: sans-serif
+}
+p{
+        color: grey;
+        font-size: large;
 }
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 2fr 1fr;
+    grid-template-rows: min-content;
+    height: 100vh;
     
 }
 .articals{
     display: grid;
     grid-template-rows : 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 2/4;
+    grid-gap: 35px;
+    padding: 42px;
+    
+    
+}
+.block{
+    border-radius: 15px;
+    border: 2px solid orange;
+    background-color: white;
+    padding: 10px;
+    box-shadow:3px 6px 9px -3px;
+    
 }
 .sidebar{
     display: grid;
     grid-column: 1/2;
-    background-color: aqua;
+    background-color: rgb(52 20 20);
+    grid-row: 2/4;
+    padding: 10px;
+}
+.sidebar ul{
+    display: grid;
+    grid-row: 1/4;
+    color: white;
 }
 header{
     display: grid;
     grid-column: 2/4;
     grid-row: 1/2;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px;
+    background-color: #b799cd;
 }
 h1{
     display: grid;
     grid-column: 1/2;
-    background-color: aqua;
+    background-color: rgb(52 20 20);
+    padding: 15px;
     
 }
+.dash{
+    color: white;
+    align-items: center;
+    background-color: rgb(52 20 20);
+}
+.announcements{
+    margin-top: 15px;
+}
 .trending{
-    display: grid;
     grid-column: 3/4;
+    margin-top: 15px;
 }
 .topme{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
     grid-column: 2/3;
     grid-row: 1/1;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-right: 150px;
 }
-nav{    display: grid;
+nav{          display: flex;
     grid-column: 2/3;
     grid-row: 2/3;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    height: fit-content;
+    padding-top: 42px;
 }
 .quote{
     display: grid;
     grid-column: 1/2;
+    padding: 0 0 23px 100px;
+    grid-template-columns: 0.2fr 1fr;
+     align-items: center;
 }
 label{
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-content: start;
+    padding-top: 10px;
 }
+button{    background-color: #70458f;
+    border-color: #70458f;
+    padding: 5px;
+    width: 140px;
+    border-radius: 7px;
+    color: white;
+    font-size: larger;}
